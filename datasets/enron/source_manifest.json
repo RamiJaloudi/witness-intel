@@ -1,0 +1,11 @@
+{
+  "dataset": "CMU Enron email corpus, May 7, 2015 release",
+  "source_url": "https://www.cs.cmu.edu/~enron/enron_mail_20150507.tar.gz",
+  "catalog_url": "https://www.cs.cmu.edu/~enron/",
+  "archive": "source/enron_mail_20150507.tar.gz",
+  "sha256": "b3da1b3fe0369ec3140bb4fbce94702c33b7da810ec15d718b3fadf5cd748ca7",
+  "bytes": 443254787,
+  "archive_regular_files": 517401,
+  "rights": "Public research distribution by CMU; no blanket copyright license asserted.",
+  "attachments": "Not included in this CMU release"
+}

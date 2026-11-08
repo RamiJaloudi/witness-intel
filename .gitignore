@@ -1,0 +1,26 @@
+.env
+.env.*
+!.env.example
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+data/
+uploads/
+*.log
+*.sql
+!migrations/*.sql
+*.dump
+node_modules/
+dist/
+*.zip
+credentials*.json
+*service-account*.json
+*.pem
+*.key
+datasets/enron/source/*.partial
+
+# Locally generated Enron research data
+/datasets/enron/source/
+/datasets/enron/documents/
+/datasets/enron/benchmark_DO_NOT_IMPORT/

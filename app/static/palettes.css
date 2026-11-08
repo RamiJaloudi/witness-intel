@@ -1,0 +1,38 @@
+/* Palette roles override presentation only. Evidence and review state are unchanged. */
+:root[data-palette]{--navy:var(--header);--blue:var(--primary);--orange:var(--accent);color-scheme:light;background:var(--page);color:var(--ink)}
+:root[data-palette] body{background:var(--page);color:var(--ink)}
+:root[data-palette] header,:root[data-palette] th{background:var(--header);color:white}
+:root[data-palette] header small{color:#ffffffdd}
+:root[data-palette] button{background:var(--primary);color:var(--on-primary)}
+:root[data-palette] button.secondary{background:white;color:var(--ink);border-color:var(--line)}
+:root[data-palette] nav button.secondary{background:transparent;color:var(--muted)}
+:root[data-palette] nav button.active{color:var(--primary);border-bottom-color:var(--primary)}
+:root[data-palette] input,:root[data-palette] select,:root[data-palette] textarea{background:white;color:var(--ink);border-color:var(--line);accent-color:var(--primary)}
+:root[data-palette] h2,:root[data-palette] h3,:root[data-palette] h4{color:var(--header)}
+:root[data-palette] a{color:var(--primary)}
+:root[data-palette] .hint,:root[data-palette] .question-purpose,:root[data-palette] .source-meta,:root[data-palette] .count-note{color:var(--muted)}
+:root[data-palette] .summary-line,:root[data-palette] blockquote{color:var(--ink)}
+:root[data-palette] section,:root[data-palette] .source-dialog,:root[data-palette] .witness-card,:root[data-palette] .witness-index{background:white;color:var(--ink);border-color:var(--line)}
+:root[data-palette] .witness-card-header,:root[data-palette] .dialog-header,:root[data-palette] .witness-index-title,:root[data-palette] .source-inline,:root[data-palette] .prompt-recap,:root[data-palette] pre{background:var(--panel)}
+:root[data-palette] .witness-index button{background:white;color:var(--header)}
+:root[data-palette] .witness-index button.selected{background:var(--tint);border-left-color:var(--primary)}
+:root[data-palette] .citation{background:var(--tint);color:var(--primary);border-color:var(--line)}
+:root[data-palette] .source-dialog blockquote,:root[data-palette] #message{background:var(--tint);color:var(--ink)}
+:root[data-palette] .tag:not(.review-approved):not(.review-rejected):not(.review-needs_review){background:var(--tint);color:var(--header)}
+:root[data-palette] tbody tr:hover,:root[data-palette] .empty-state{background:var(--panel)}
+:root[data-palette] .warning{background:#fff8ec;color:#594319;border-left-color:#b27700}
+:root[data-palette] .danger{background:#a42b32;color:white}
+:root[data-palette] .danger-secondary{background:white;color:#a42b32;border-color:#b63840}
+:root[data-palette] progress{accent-color:var(--primary)}
+.appearance-panel{border-bottom:1px solid var(--line);padding-bottom:24px;margin-bottom:24px}
+.palette-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px}
+.palette-card{border:1px solid var(--line);padding:12px;min-width:0;border-radius:4px}
+.palette-card.selected{border:2px solid var(--primary);padding:11px;background:var(--tint)}
+button.palette-choice{width:100%;text-align:left;display:block;padding:8px;background:white;color:var(--ink);border:1px solid var(--line)}
+.palette-name{display:block;margin-bottom:10px;font-size:14px}
+.palette-swatches{display:flex;height:32px;overflow:hidden;border-radius:3px;border:1px solid #00000018}
+.palette-swatch{flex:1;min-width:0}
+.palette-codes{font:10px/1.7 Consolas,monospace;overflow-wrap:anywhere;margin:8px 0;color:var(--muted)}
+.palette-card a{font-size:12px}
+@media(max-width:550px){.palette-grid{grid-template-columns:1fr}}
+:root[data-palette] button.palette-choice{background:white;color:var(--ink);border-color:var(--line)}

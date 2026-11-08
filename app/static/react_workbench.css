@@ -1,0 +1,74 @@
+#reactWorkbench:empty, .wi-menu-toggle { display: none }
+.react-workbench-ready { --sidebar-width: 250px }
+.react-workbench-ready .app-sidebar, .react-workbench-ready #matter,
+.react-workbench-ready #new { display: none }
+.react-workbench-ready .wi-replaced-heading { display: none }
+.react-workbench-ready header.app-topbar { height: auto; min-height: 82px }
+.react-workbench-ready[data-workbench-page="Ask This Matter"] .workspace-bar,
+.react-workbench-ready[data-workbench-page="Ask This Matter"] .global-search-bar,
+.react-workbench-ready[data-workbench-page="Ask This Matter"] details:has(> .panel-content > #workflowStatus),
+.react-workbench-ready[data-workbench-page="Ask This Matter"] .attention-panel { display: none }
+.wi-sidebar {
+  position: fixed; inset: 0 auto 0 0; width: var(--sidebar-width); z-index: 30;
+  background: color-mix(in srgb, var(--header, #17273e) 72%, #101a2b); color: white; overflow-y: auto;
+  display: flex; flex-direction: column; gap: 12px; padding: 18px 15px;
+}
+:root .wi-sidebar .wi-brand { display: flex; gap: 11px; align-items: center; padding: 0 4px; background: transparent; color: white; text-align: left; font-size: 19px }
+.wi-brand small { display: block; opacity: .78; font-size: 11px }
+.wi-brand-mark { width: 36px; height: 36px; padding: 7px; display: inline-grid; place-items: center; background: #ffffff1b; border-radius: 9px }
+.wi-brand-mark svg { width: 21px; height: 21px }
+.wi-matter-card { border: 1px solid #ffffff30; background: #0002; border-radius: 12px; padding: 12px; display: grid; gap: 5px }
+.wi-matter-card strong { font-size: 16px; overflow-wrap: anywhere }
+.wi-matter-card > span:not(.wi-eyebrow) { color: #fffe; font-size: 12px }
+.wi-matter-card label { color: white; min-width: 0 }
+.wi-matter-card select { width: 100% }
+.wi-eyebrow { font-size: 10px; text-transform: uppercase; letter-spacing: .11em; font-weight: 700; color: var(--muted) }
+.wi-sidebar .wi-eyebrow { color: #fffd }
+.wi-sidebar .wi-navigation { display: grid; gap: 5px; border: 0; margin: 0; overflow: visible }
+.wi-nav-group { display: grid; gap: 2px }
+.wi-sidebar .wi-nav-group > .wi-eyebrow {
+  color: #bbd1ee;
+  border-top: 1px solid #ffffff26;
+  padding: 7px 9px 3px;
+  cursor: default;
+}
+:root .react-workbench-ready .wi-sidebar button.secondary { border: 1px solid transparent; background: transparent; color: white; text-align: left; min-height: 30px; padding: 5px 9px; font-size: 13px }
+:root .react-workbench-ready .wi-sidebar button.secondary[aria-current="page"] { background: #ffffff24; border-color: #ffffff30; box-shadow: inset 3px 0 var(--accent, #82aaff) }
+:root .react-workbench-ready .wi-sidebar button.secondary:hover { background: #ffffff19; color: white }
+.wi-sidebar button:focus-visible, .wi-sidebar summary:focus-visible { outline: 2px solid white }
+.wi-matter-actions { display: flex; flex-wrap: wrap; gap: 4px }
+.wi-matter-actions:last-child { padding-top: 5px; border-top: 1px solid #ffffff26 }
+:root .react-workbench-ready .wi-matter-actions button.secondary { padding-inline: 5px; font-size: 12px }
+.wi-tool-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(235px, 100%), 1fr)); gap: 14px; margin-top: 20px }
+.wi-tool-grid .wi-tool-card { display: grid; align-content: start; gap: 8px; text-align: left; padding: 18px; border-radius: 12px }
+.wi-tool-card strong { font-size: 16px }
+.wi-tool-card span { color: var(--muted); font-size: 13px }
+.wi-inquire { width: min(100%, 1100px); margin: 0 auto }
+.wi-inquire-intro, .wi-answer-heading, .wi-actions, .wi-pager {
+  display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;
+}
+.wi-inquire-intro { margin-bottom: 24px; align-items: start }
+.wi-work-product-header { margin-bottom: 16px }
+.wi-inquire-intro h2, .wi-answer-heading h3 { margin: 2px 0; font-size: clamp(22px, 3vw, 30px) }
+.wi-inquire-intro p { margin: 5px 0; color: var(--muted) }
+.wi-local-badge { border: 1px solid var(--line); border-radius: 24px; padding: 5px 12px; font-weight: 650 }
+.wi-inquire form { display: grid; gap: 12px; max-width: 840px }
+.wi-inquire label { margin: 0 }
+.wi-inquire textarea { resize: vertical }
+.wi-scope { border: 1px solid var(--line); border-radius: 10px; padding: 12px }
+.wi-scope summary { cursor: pointer; font-weight: 650 }
+.wi-scope summary span { margin-left: 8px; color: var(--muted); font-weight: 400 }
+.wi-scope fieldset { border: 0; margin: 12px 0 0; padding: 0; display: grid; gap: 8px; min-width: 0 }
+.wi-doc-list { display: grid; gap: 7px; max-height: 260px; overflow: auto }
+.wi-check { display: flex; gap: 8px; align-items: baseline; overflow-wrap: anywhere }
+.wi-pager { justify-content: center; margin-top: 12px }
+.wi-question-recap, .wi-empty { background: var(--page, #f5f7fb); border-radius: 10px; border: 1px solid var(--line); padding: 14px; overflow-wrap: anywhere }
+.wi-answer td { min-width: 100px; overflow-wrap: anywhere }
+.wi-answer td:last-child { width: 33%; min-width: 150px }
+.wi-answer td details { margin-top: 8px }
+@media (max-width: 900px) {
+  .react-workbench-ready .wi-menu-toggle { display: block; position: relative; z-index: 31; margin: 8px 14px }
+  .wi-sidebar { display: none }
+  .wi-sidebar.wi-sidebar-open { display: flex; top: 54px; width: min(280px, 92vw); box-shadow: 0 10px 30px #0005 }
+  .react-workbench-ready header.app-topbar, .react-workbench-ready #mainContent { margin-left: 0 }
+}

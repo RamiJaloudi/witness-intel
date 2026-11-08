@@ -1,0 +1,5 @@
+* text=auto
+*.bat text eol=crlf
+
+# Preserve original evidence bytes, including original line endings and whitespace.
+datasets/enron/documents/*.eml -text -whitespace

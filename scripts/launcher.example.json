@@ -1,0 +1,8 @@
+{
+  "database_url": "",
+  "postgres_bin": "C:/Program Files/PostgreSQL/18/bin",
+  "postgres_data": "",
+  "pgadmin_exe": "C:/Program Files/PostgreSQL/18/pgAdmin 4/runtime/pgAdmin4.exe",
+  "start_ollama": true,
+  "open_browser": true
+}
